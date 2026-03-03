@@ -230,3 +230,41 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+.visualKeyboardRow {
+  flex: 1;
+  line-height: var(--header-height);
+  text-align: center;
+}
+.visualKeyboardKey {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  margin: 2px;
+  font-size: 1.5rem;
+  padding: 2px;
+  width: 30px;
+  border: 2px solid var(--color-gray-700);
+  border-radius: 9px;
+}
+.visualKeyboardKey.unused {
+  background: var(--color-gray-700);
+  border-color: var(--color-gray-700);
+  color: white;
+}
+.visualKeyboardKey.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.visualKeyboardKey.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.visualKeyboardKey.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
